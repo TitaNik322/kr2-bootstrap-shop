@@ -1,0 +1,50 @@
+[
+  {
+    "page": "index",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "page": "catalog",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "page": "product",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "page": "order",
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "page": "favorites",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "page": "delivery",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "page": "contacts",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "page": "privacy",
+    "violations": [],
+    "incomplete": []
+  }
+]

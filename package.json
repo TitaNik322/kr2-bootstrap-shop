@@ -1,0 +1,15 @@
+{
+  "name": "kr2-bootstrap-shop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static Bootstrap shop; npm dependencies are only for development tests",
+  "scripts": {
+    "test:static": "python tests/static_check.py",
+    "test:browser": "node tests/browser.cjs",
+    "test:accessibility": "node tests/accessibility.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1",
+    "axe-core": "4.10.3"
+  }
+}

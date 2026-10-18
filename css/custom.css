@@ -6,7 +6,10 @@
   --bs-body-bg: #fffefa;
   --bs-secondary-color: #656962;
   --bs-link-color: #a53d20;
+  --bs-link-color-rgb: 165, 61, 32;
   --bs-link-hover-color: #7d2e18;
+  --bs-link-hover-color-rgb: 125, 46, 24;
+  --bs-success-rgb: 20, 110, 68;
   --shop-surface: #f2f1eb;
 }
 body { font-family: 'Segoe UI', Arial, sans-serif; }
@@ -46,7 +49,7 @@ body { font-family: 'Segoe UI', Arial, sans-serif; }
 .hero__label { position: absolute; top: 22px; left: 22px; padding: .7rem 1rem; font-weight: 500; }
 .hero__note { position: absolute; bottom: 24px; left: 24px; background: rgb(255 254 250 / 95%); padding: 13px 18px; border-radius: 14px; }
 .hero__seal { width: 40px; height: 40px; display: grid; place-items: center; border-radius: 50%; border: 1px solid #bcc6b5; color: #536a5b; }
-.eyebrow { font-size: .75rem; font-weight: 650; letter-spacing: .17em; text-transform: uppercase; color: #75786a; }
+.eyebrow { font-size: .75rem; font-weight: 650; letter-spacing: .17em; text-transform: uppercase; color: #61665a; }
 .section-space { padding-top: 2.5rem; padding-bottom: 3.5rem; }
 .product-card { background: transparent; }
 .product-card__visual { border-radius: 1rem; overflow: hidden; }
@@ -69,6 +72,7 @@ body { font-family: 'Segoe UI', Arial, sans-serif; }
 .page-link { min-width: 44px; min-height: 44px; text-align: center; }
 .site-footer { background: #263a30; }
 .site-footer h2 { color: #fff; }
+.site-footer__muted { color: #b5c2ba; }
 .site-footer li { margin-bottom: .55rem; }
 .site-footer li a { color: #dce3dc; text-decoration: none; font-size: .9rem; }
 .site-footer li a:hover { color: white; text-decoration: underline; }

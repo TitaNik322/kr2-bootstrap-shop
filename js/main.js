@@ -161,6 +161,8 @@
 
   const form = document.getElementById('orderForm');
   if (!form) return;
+  // Without JS, keep the demo form disabled so native GET submission cannot occur.
+  document.getElementById('orderFields').disabled = false;
   const productSelect = form.elements.product;
   const quantityInput = form.elements.quantity;
   const address = form.elements.address;

@@ -1,38 +1,707 @@
 <!doctype html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Каталог. Точка — учебный магазин техники для рабочего пространства."><meta name="theme-color" content="#fbf9f5"><title>Каталог — Точка</title><link rel="icon" href="images/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css"><link rel="stylesheet" href="css/custom.css"></head><body class="d-flex flex-column min-vh-100"><a class="skip-link" href="#main">Перейти к содержимому</a><div class="announcement text-center small py-2 px-3">Место для хороших идей. Техника для вашего ритма.</div><header class="site-header sticky-top border-bottom"><nav class="navbar navbar-expand-lg py-3" aria-label="Основная навигация"><div class="container"><a class="navbar-brand brand" href="index.html"><span class="brand__mark">т.</span> точка<span class="brand__caption">техника для жизни</span></a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Открыть меню"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="mainNavbar"><ul class="navbar-nav mx-auto gap-lg-3"><li class="nav-item"><a class="nav-link "  href="index.html">Главная</a></li><li class="nav-item"><a class="nav-link active" aria-current="page" href="catalog.html">Каталог</a></li><li class="nav-item"><a class="nav-link "  href="delivery.html">Доставка</a></li><li class="nav-item"><a class="nav-link "  href="contacts.html">Контакты</a></li></ul><div class="d-flex gap-2 pt-3 pt-lg-0"><a href="favorites.html" class="btn btn-light" aria-label="Избранное"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg> <span data-favorite-count class="badge text-bg-dark">0</span></a><a class="btn btn-outline-dark" href="order.html" >Оставить заявку</a></div></div></div></nav></header><main id="main" tabindex="-1"><nav aria-label="Хлебные крошки" class="container pt-4"><ol class="breadcrumb small"><li class="breadcrumb-item"><a href="index.html">Главная</a></li><li class="breadcrumb-item active" aria-current="page">Каталог</li></ol></nav><section class="container pt-3 pb-5"><p class="eyebrow mb-3">Всё на своих местах</p><h1 class="display-5 fw-semibold mb-3">Каталог вещей</h1><p class="text-body-secondary lead mb-0">Найдите то, что сделает ваш рабочий день немного лучше.</p><div class="row g-4 mt-4"><aside class="col-12 col-lg-3" aria-label="Фильтры каталога"><form id="catalogFilters" class="catalog-filters rounded-4 p-4"><div class="d-flex justify-content-between align-items-center mb-4"><h2 class="h5 mb-0">Фильтры</h2><button class="btn btn-link btn-sm p-0" type="reset">Сбросить</button></div><label class="form-label" for="search">Поиск</label><div class="input-group mb-4"><span class="input-group-text"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 21-5-5M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg></span><input class="form-control" id="search" name="search" type="search" placeholder="Название товара" maxlength="80"></div><label class="form-label" for="category">Категория</label><select class="form-select mb-4" id="category" name="category"><option value="">Все категории</option><option>Клавиатуры</option><option>Аудио</option><option>Аксессуары</option></select><label class="form-label" for="maxPrice">Цена до, ₽</label><input class="form-control mb-4" id="maxPrice" name="maxPrice" type="number" min="0" max="999999" step="1" placeholder="Без ограничений"><div class="form-check"><input class="form-check-input" type="checkbox" name="sale" id="sale"><label class="form-check-label" for="sale">Только со скидкой</label></div></form><p class="small text-body-secondary mt-3">Все цены и товары демонстрационные. Оплата на сайте не производится.</p></aside><div class="col-12 col-lg-9"><div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4"><p class="mb-0 text-body-secondary" id="catalogCount" role="status" aria-live="polite">Найдено товаров: 9</p><div class="d-flex align-items-center gap-2"><label class="small text-nowrap" for="sort">Сначала</label><select id="sort" class="form-select form-select-sm" name="sort"><option value="popular">Популярные</option><option value="price-asc">Дешевле</option><option value="price-desc">Дороже</option><option value="name">По названию</option></select></div></div><div id="catalogGrid" class="row g-4"><div class="col-12 col-md-6 col-lg-4" data-product-card data-id="keys-air"><article class="card product-card h-100 border-0">
-    <div class="product-card__visual position-relative"><a href="product.html?id=keys-air" tabindex="-1" aria-hidden="true"><img src="images/keys-air.svg" class="card-img-top" alt="" width="420" height="340" loading="lazy"></a>
-    <span class="badge product-card__badge text-bg-light">Хит</span><button class="btn product-card__favorite" type="button" data-favorite="keys-air" aria-label="В избранное: Keys Air" aria-pressed="false"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg></button></div>
-    <div class="card-body px-1 pb-1 d-flex flex-column"><p class="small text-body-secondary mb-1">Клавиатуры</p><h3 class="h5 card-title"><a class="text-decoration-none text-body" href="product.html?id=keys-air">Keys Air</a></h3><p class="card-text text-body-secondary small flex-grow-1">Механика, которую хочется слышать.</p>
-    <div class="d-flex align-items-center flex-wrap gap-2 mb-3"><span class="fw-semibold fs-5">6 490 ₽</span><del class="small text-body-secondary">7 990 ₽</del></div><div class="d-flex gap-2"><a class="btn btn-outline-dark flex-grow-1" href="product.html?id=keys-air">Подробнее</a><a class="btn btn-primary" href="order.html?product=keys-air" aria-label="Заказать Keys Air"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div></div></article></div><div class="col-12 col-md-6 col-lg-4" data-product-card data-id="sound-one"><article class="card product-card h-100 border-0">
-    <div class="product-card__visual position-relative"><a href="product.html?id=sound-one" tabindex="-1" aria-hidden="true"><img src="images/sound-one.svg" class="card-img-top" alt="" width="420" height="340" loading="lazy"></a>
-    <span class="badge product-card__badge text-bg-light">Новинка</span><button class="btn product-card__favorite" type="button" data-favorite="sound-one" aria-label="В избранное: Sound One" aria-pressed="false"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg></button></div>
-    <div class="card-body px-1 pb-1 d-flex flex-column"><p class="small text-body-secondary mb-1">Аудио</p><h3 class="h5 card-title"><a class="text-decoration-none text-body" href="product.html?id=sound-one">Sound One</a></h3><p class="card-text text-body-secondary small flex-grow-1">Личный островок тишины.</p>
-    <div class="d-flex align-items-center flex-wrap gap-2 mb-3"><span class="fw-semibold fs-5">8 990 ₽</span></div><div class="d-flex gap-2"><a class="btn btn-outline-dark flex-grow-1" href="product.html?id=sound-one">Подробнее</a><a class="btn btn-primary" href="order.html?product=sound-one" aria-label="Заказать Sound One"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div></div></article></div><div class="col-12 col-md-6 col-lg-4" data-product-card data-id="light-arc"><article class="card product-card h-100 border-0">
-    <div class="product-card__visual position-relative"><a href="product.html?id=light-arc" tabindex="-1" aria-hidden="true"><img src="images/light-arc.svg" class="card-img-top" alt="" width="420" height="340" loading="lazy"></a>
-    <span class="badge product-card__badge text-bg-light">Скидка</span><button class="btn product-card__favorite" type="button" data-favorite="light-arc" aria-label="В избранное: Light Arc" aria-pressed="false"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg></button></div>
-    <div class="card-body px-1 pb-1 d-flex flex-column"><p class="small text-body-secondary mb-1">Аксессуары</p><h3 class="h5 card-title"><a class="text-decoration-none text-body" href="product.html?id=light-arc">Light Arc</a></h3><p class="card-text text-body-secondary small flex-grow-1">Мягкий свет для больших идей.</p>
-    <div class="d-flex align-items-center flex-wrap gap-2 mb-3"><span class="fw-semibold fs-5">3 990 ₽</span><del class="small text-body-secondary">4 490 ₽</del></div><div class="d-flex gap-2"><a class="btn btn-outline-dark flex-grow-1" href="product.html?id=light-arc">Подробнее</a><a class="btn btn-primary" href="order.html?product=light-arc" aria-label="Заказать Light Arc"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div></div></article></div><div class="col-12 col-md-6 col-lg-4" data-product-card data-id="keys-mini"><article class="card product-card h-100 border-0">
-    <div class="product-card__visual position-relative"><a href="product.html?id=keys-mini" tabindex="-1" aria-hidden="true"><img src="images/keys-mini.svg" class="card-img-top" alt="" width="420" height="340" loading="lazy"></a>
-    <span class="badge product-card__badge text-bg-light">Компактная</span><button class="btn product-card__favorite" type="button" data-favorite="keys-mini" aria-label="В избранное: Keys Mini" aria-pressed="false"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg></button></div>
-    <div class="card-body px-1 pb-1 d-flex flex-column"><p class="small text-body-secondary mb-1">Клавиатуры</p><h3 class="h5 card-title"><a class="text-decoration-none text-body" href="product.html?id=keys-mini">Keys Mini</a></h3><p class="card-text text-body-secondary small flex-grow-1">Больше места для идей.</p>
-    <div class="d-flex align-items-center flex-wrap gap-2 mb-3"><span class="fw-semibold fs-5">4 990 ₽</span></div><div class="d-flex gap-2"><a class="btn btn-outline-dark flex-grow-1" href="product.html?id=keys-mini">Подробнее</a><a class="btn btn-primary" href="order.html?product=keys-mini" aria-label="Заказать Keys Mini"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div></div></article></div><div class="col-12 col-md-6 col-lg-4" data-product-card data-id="sound-studio"><article class="card product-card h-100 border-0">
-    <div class="product-card__visual position-relative"><a href="product.html?id=sound-studio" tabindex="-1" aria-hidden="true"><img src="images/sound-studio.svg" class="card-img-top" alt="" width="420" height="340" loading="lazy"></a>
-    <span class="badge product-card__badge text-bg-light">Скидка</span><button class="btn product-card__favorite" type="button" data-favorite="sound-studio" aria-label="В избранное: Sound Studio" aria-pressed="false"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg></button></div>
-    <div class="card-body px-1 pb-1 d-flex flex-column"><p class="small text-body-secondary mb-1">Аудио</p><h3 class="h5 card-title"><a class="text-decoration-none text-body" href="product.html?id=sound-studio">Sound Studio</a></h3><p class="card-text text-body-secondary small flex-grow-1">Каждая деталь на своём месте.</p>
-    <div class="d-flex align-items-center flex-wrap gap-2 mb-3"><span class="fw-semibold fs-5">12 990 ₽</span><del class="small text-body-secondary">14 990 ₽</del></div><div class="d-flex gap-2"><a class="btn btn-outline-dark flex-grow-1" href="product.html?id=sound-studio">Подробнее</a><a class="btn btn-primary" href="order.html?product=sound-studio" aria-label="Заказать Sound Studio"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div></div></article></div><div class="col-12 col-md-6 col-lg-4" data-product-card data-id="desk-glow"><article class="card product-card h-100 border-0">
-    <div class="product-card__visual position-relative"><a href="product.html?id=desk-glow" tabindex="-1" aria-hidden="true"><img src="images/desk-glow.svg" class="card-img-top" alt="" width="420" height="340" loading="lazy"></a>
-    <span class="badge product-card__badge text-bg-light">Новинка</span><button class="btn product-card__favorite" type="button" data-favorite="desk-glow" aria-label="В избранное: Desk Glow" aria-pressed="false"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg></button></div>
-    <div class="card-body px-1 pb-1 d-flex flex-column"><p class="small text-body-secondary mb-1">Аксессуары</p><h3 class="h5 card-title"><a class="text-decoration-none text-body" href="product.html?id=desk-glow">Desk Glow</a></h3><p class="card-text text-body-secondary small flex-grow-1">Свет под ваше настроение.</p>
-    <div class="d-flex align-items-center flex-wrap gap-2 mb-3"><span class="fw-semibold fs-5">5 490 ₽</span></div><div class="d-flex gap-2"><a class="btn btn-outline-dark flex-grow-1" href="product.html?id=desk-glow">Подробнее</a><a class="btn btn-primary" href="order.html?product=desk-glow" aria-label="Заказать Desk Glow"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div></div></article></div><div class="col-12 col-md-6 col-lg-4" data-product-card data-id="keys-pro"><article class="card product-card h-100 border-0">
-    <div class="product-card__visual position-relative"><a href="product.html?id=keys-pro" tabindex="-1" aria-hidden="true"><img src="images/keys-pro.svg" class="card-img-top" alt="" width="420" height="340" loading="lazy"></a>
-    <span class="badge product-card__badge text-bg-light">Для работы</span><button class="btn product-card__favorite" type="button" data-favorite="keys-pro" aria-label="В избранное: Keys Pro" aria-pressed="false"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg></button></div>
-    <div class="card-body px-1 pb-1 d-flex flex-column"><p class="small text-body-secondary mb-1">Клавиатуры</p><h3 class="h5 card-title"><a class="text-decoration-none text-body" href="product.html?id=keys-pro">Keys Pro</a></h3><p class="card-text text-body-secondary small flex-grow-1">Полноразмерная свобода.</p>
-    <div class="d-flex align-items-center flex-wrap gap-2 mb-3"><span class="fw-semibold fs-5">9 990 ₽</span></div><div class="d-flex gap-2"><a class="btn btn-outline-dark flex-grow-1" href="product.html?id=keys-pro">Подробнее</a><a class="btn btn-primary" href="order.html?product=keys-pro" aria-label="Заказать Keys Pro"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div></div></article></div><div class="col-12 col-md-6 col-lg-4" data-product-card data-id="sound-go"><article class="card product-card h-100 border-0">
-    <div class="product-card__visual position-relative"><a href="product.html?id=sound-go" tabindex="-1" aria-hidden="true"><img src="images/sound-go.svg" class="card-img-top" alt="" width="420" height="340" loading="lazy"></a>
-    <span class="badge product-card__badge text-bg-light">Скидка</span><button class="btn product-card__favorite" type="button" data-favorite="sound-go" aria-label="В избранное: Sound Go" aria-pressed="false"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg></button></div>
-    <div class="card-body px-1 pb-1 d-flex flex-column"><p class="small text-body-secondary mb-1">Аудио</p><h3 class="h5 card-title"><a class="text-decoration-none text-body" href="product.html?id=sound-go">Sound Go</a></h3><p class="card-text text-body-secondary small flex-grow-1">Любимый плейлист всегда рядом.</p>
-    <div class="d-flex align-items-center flex-wrap gap-2 mb-3"><span class="fw-semibold fs-5">5 990 ₽</span><del class="small text-body-secondary">6 990 ₽</del></div><div class="d-flex gap-2"><a class="btn btn-outline-dark flex-grow-1" href="product.html?id=sound-go">Подробнее</a><a class="btn btn-primary" href="order.html?product=sound-go" aria-label="Заказать Sound Go"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div></div></article></div><div class="col-12 col-md-6 col-lg-4" data-product-card data-id="light-dot"><article class="card product-card h-100 border-0">
-    <div class="product-card__visual position-relative"><a href="product.html?id=light-dot" tabindex="-1" aria-hidden="true"><img src="images/light-dot.svg" class="card-img-top" alt="" width="420" height="340" loading="lazy"></a>
-    <span class="badge product-card__badge text-bg-light">Компактная</span><button class="btn product-card__favorite" type="button" data-favorite="light-dot" aria-label="В избранное: Light Dot" aria-pressed="false"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg></button></div>
-    <div class="card-body px-1 pb-1 d-flex flex-column"><p class="small text-body-secondary mb-1">Аксессуары</p><h3 class="h5 card-title"><a class="text-decoration-none text-body" href="product.html?id=light-dot">Light Dot</a></h3><p class="card-text text-body-secondary small flex-grow-1">Маленькая деталь большого комфорта.</p>
-    <div class="d-flex align-items-center flex-wrap gap-2 mb-3"><span class="fw-semibold fs-5">2 990 ₽</span></div><div class="d-flex gap-2"><a class="btn btn-outline-dark flex-grow-1" href="product.html?id=light-dot">Подробнее</a><a class="btn btn-primary" href="order.html?product=light-dot" aria-label="Заказать Light Dot"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div></div></article></div></div><div id="catalogEmpty" class="alert alert-light border mt-4" hidden>Ничего не нашлось. Измените условия или <button class="btn btn-link p-0" type="button" data-reset-filters>сбросьте фильтры</button>.</div><nav class="mt-5" aria-label="Страницы каталога"><ul id="pagination" class="pagination justify-content-center"></ul></nav></div></div></section></main><footer class="site-footer mt-auto pt-5 pb-4"><div class="container"><div class="row g-4"><div class="col-12 col-md-6"><a class="brand text-decoration-none text-white" href="index.html">точка.</a><p class="text-white-50 mt-3">Хорошие вещи. Спокойный ритм.<br>Ваше рабочее пространство.</p></div><div class="col-6 col-md-3"><h2 class="h6">Исследуйте</h2><ul class="list-unstyled"><li><a href="catalog.html">Каталог</a></li><li><a href="favorites.html">Избранное</a></li><li><a href="order.html">Оставить заявку</a></li></ul></div><div class="col-6 col-md-3"><h2 class="h6">Помощь</h2><ul class="list-unstyled"><li><a href="delivery.html">Доставка и возврат</a></li><li><a href="contacts.html">Контакты и FAQ</a></li><li><a href="privacy.html">О данных формы</a></li></ul></div></div><div class="border-top border-secondary mt-4 pt-3 d-flex flex-wrap justify-content-between gap-2 small text-white-50"><span>© 2026 Точка · Учебный проект КР №2</span><span>Ситников Александр · ЭФБО-01-25</span></div></div></footer><div class="toast-container position-fixed bottom-0 end-0 p-3"><div class="toast" id="siteToast" role="status" aria-live="polite" aria-atomic="true"><div class="toast-header"><strong class="me-auto">Точка</strong><button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Закрыть уведомление"></button></div><div class="toast-body" id="toastMessage"></div></div></div><noscript><div class="alert alert-warning container my-3">Для фильтров, избранного и подтверждения заявки включите JavaScript. Страницы и описания товаров доступны без него.</div></noscript><script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script><script src="js/products.js"></script><script src="js/main.js"></script></body></html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Каталог. Точка — учебный магазин техники для рабочего пространства.">
+    <meta name="theme-color" content="#fbf9f5">
+    <title>
+      Каталог — Точка
+    </title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <a class="skip-link" href="#main">
+      Перейти к содержимому
+    </a>
+    <div class="announcement text-center small py-2 px-3">
+      Место для хороших идей. Техника для вашего ритма.
+    </div>
+    <header class="site-header sticky-top border-bottom">
+      <nav class="navbar navbar-expand-lg py-3" aria-label="Основная навигация">
+        <div class="container">
+          <a class="navbar-brand brand" href="index.html">
+            <span class="brand__mark">
+              т.
+            </span>
+            точка
+            <span class="brand__caption">
+              техника для жизни
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Открыть меню">
+            <span class="navbar-toggler-icon">
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav mx-auto gap-lg-3">
+              <li class="nav-item">
+                <a class="nav-link "  href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="catalog.html">
+                  Каталог
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "  href="delivery.html">
+                  Доставка
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "  href="contacts.html">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+            <div class="d-flex gap-2 pt-3 pt-lg-0">
+              <a href="favorites.html" class="btn btn-light" aria-label="Избранное">
+                <svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>
+                </svg>
+                <span data-favorite-count class="badge text-bg-dark">
+                  0
+                </span>
+              </a>
+              <a class="btn btn-outline-dark" href="order.html" >
+                Оставить заявку
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <nav aria-label="Хлебные крошки" class="container pt-4">
+        <ol class="breadcrumb small">
+          <li class="breadcrumb-item">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Каталог
+          </li>
+        </ol>
+      </nav>
+      <section class="container pt-3 pb-5">
+        <p class="eyebrow mb-3">
+          Всё на своих местах
+        </p>
+        <h1 class="display-5 fw-semibold mb-3">
+          Каталог вещей
+        </h1>
+        <p class="text-body-secondary lead mb-0">
+          Найдите то, что сделает ваш рабочий день немного лучше.
+        </p>
+        <div class="row g-4 mt-4">
+          <aside class="col-12 col-lg-3" aria-label="Фильтры каталога">
+            <form id="catalogFilters" class="catalog-filters rounded-4 p-4">
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="h5 mb-0">
+                  Фильтры
+                </h2>
+                <button class="btn btn-link btn-sm p-0" type="reset">
+                  Сбросить
+                </button>
+              </div>
+              <label class="form-label" for="search">
+                Поиск
+              </label>
+              <div class="input-group mb-4">
+                <span class="input-group-text">
+                  <svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="m21 21-5-5M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/>
+                  </svg>
+                </span>
+                <input class="form-control" id="search" name="search" type="search" placeholder="Название товара" maxlength="80">
+              </div>
+              <label class="form-label" for="category">
+                Категория
+              </label>
+              <select class="form-select mb-4" id="category" name="category">
+                <option value="">
+                  Все категории
+                </option>
+                <option>
+                  Клавиатуры
+                </option>
+                <option>
+                  Аудио
+                </option>
+                <option>
+                  Аксессуары
+                </option>
+              </select>
+              <label class="form-label" for="maxPrice">
+                Цена до, ₽
+              </label>
+              <input class="form-control mb-4" id="maxPrice" name="maxPrice" type="number" min="0" max="999999" step="1" placeholder="Без ограничений">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="sale" id="sale">
+                <label class="form-check-label" for="sale">
+                  Только со скидкой
+                </label>
+              </div>
+            </form>
+            <p class="small text-body-secondary mt-3">
+              Все цены и товары демонстрационные. Оплата на сайте не производится.
+            </p>
+          </aside>
+          <div class="col-12 col-lg-9">
+            <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+              <p class="mb-0 text-body-secondary" id="catalogCount" role="status" aria-live="polite">
+                Найдено товаров: 9
+              </p>
+              <div class="d-flex align-items-center gap-2">
+                <label class="small text-nowrap" for="sort">
+                  Сначала
+                </label>
+                <select id="sort" class="form-select form-select-sm" name="sort">
+                  <option value="popular">
+                    Популярные
+                  </option>
+                  <option value="price-asc">
+                    Дешевле
+                  </option>
+                  <option value="price-desc">
+                    Дороже
+                  </option>
+                  <option value="name">
+                    По названию
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div id="catalogGrid" class="row g-4">
+              <div class="col-12 col-md-6 col-lg-4" data-product-card data-id="keys-air">
+                <article class="card product-card h-100 border-0">
+                  <div class="product-card__visual position-relative">
+                    <a href="product.html?id=keys-air" tabindex="-1" aria-hidden="true">
+                      <img src="images/keys-air.svg" class="card-img-top" alt="" width="420" height="340" loading="lazy">
+                    </a>
+                    <span class="badge product-card__badge text-bg-light">
+                      Хит
+                    </span>
+                    <button class="btn product-card__favorite" type="button" data-favorite="keys-air" aria-label="В избранное: Keys Air" aria-pressed="false">
+                      <svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="card-body px-1 pb-1 d-flex flex-column">
+                    <p class="small text-body-secondary mb-1">
+                      Клавиатуры
+                    </p>
+                    <h3 class="h5 card-title">
+                      <a class="text-decoration-none text-body" href="product.html?id=keys-air">
+                        Keys Air
+                      </a>
+                    </h3>
+                    <p class="card-text text-body-secondary small flex-grow-1">
+                      Механика, которую хочется слышать.
+                    </p>
+                    <div class="d-flex align-items-center flex-wrap gap-2 mb-3">
+                      <span class="fw-semibold fs-5">
+                        6 490 ₽
+                      </span>
+                      <del class="small text-body-secondary">
+                        7 990 ₽
+                      </del>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <a class="btn btn-outline-dark flex-grow-1" href="product.html?id=keys-air">
+                        Подробнее
+                      </a>
+                      <a class="btn btn-primary" href="order.html?product=keys-air" aria-label="Заказать Keys Air">
+                        <svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M5 12h14m-6-6 6 6-6 6"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4" data-product-card data-id="sound-one">
+                <article class="card product-card h-100 border-0">
+                  <div class="product-card__visual position-relative">
+                    <a href="product.html?id=sound-one" tabindex="-1" aria-hidden="true">
+                      <img src="images/sound-one.svg" class="card-img-top" alt="" width="420" height="340" loading="lazy">
+                    </a>
+                    <span class="badge product-card__badge text-bg-light">
+                      Новинка
+                    </span>
+                    <button class="btn product-card__favorite" type="button" data-favorite="sound-one" aria-label="В избранное: Sound One" aria-pressed="false">
+                      <svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="card-body px-1 pb-1 d-flex flex-column">
+                    <p class="small text-body-secondary mb-1">
+                      Аудио
+                    </p>
+                    <h3 class="h5 card-title">
+                      <a class="text-decoration-none text-body" href="product.html?id=sound-one">
+                        Sound One
+                      </a>
+                    </h3>
+                    <p class="card-text text-body-secondary small flex-grow-1">
+                      Личный островок тишины.
+                    </p>
+                    <div class="d-flex align-items-center flex-wrap gap-2 mb-3">
+                      <span class="fw-semibold fs-5">
+                        8 990 ₽
+                      </span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <a class="btn btn-outline-dark flex-grow-1" href="product.html?id=sound-one">
+                        Подробнее
+                      </a>
+                      <a class="btn btn-primary" href="order.html?product=sound-one" aria-label="Заказать Sound One">
+                        <svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M5 12h14m-6-6 6 6-6 6"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4" data-product-card data-id="light-arc">
+                <article class="card product-card h-100 border-0">
+                  <div class="product-card__visual position-relative">
+                    <a href="product.html?id=light-arc" tabindex="-1" aria-hidden="true">
+                      <img src="images/light-arc.svg" class="card-img-top" alt="" width="420" height="340" loading="lazy">
+                    </a>
+                    <span class="badge product-card__badge text-bg-light">
+                      Скидка
+                    </span>
+                    <button class="btn product-card__favorite" type="button" data-favorite="light-arc" aria-label="В избранное: Light Arc" aria-pressed="false">
+                      <svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="card-body px-1 pb-1 d-flex flex-column">
+                    <p class="small text-body-secondary mb-1">
+                      Аксессуары
+                    </p>
+                    <h3 class="h5 card-title">
+                      <a class="text-decoration-none text-body" href="product.html?id=light-arc">
+                        Light Arc
+                      </a>
+                    </h3>
+                    <p class="card-text text-body-secondary small flex-grow-1">
+                      Мягкий свет для больших идей.
+                    </p>
+                    <div class="d-flex align-items-center flex-wrap gap-2 mb-3">
+                      <span class="fw-semibold fs-5">
+                        3 990 ₽
+                      </span>
+                      <del class="small text-body-secondary">
+                        4 490 ₽
+                      </del>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <a class="btn btn-outline-dark flex-grow-1" href="product.html?id=light-arc">
+                        Подробнее
+                      </a>
+                      <a class="btn btn-primary" href="order.html?product=light-arc" aria-label="Заказать Light Arc">
+                        <svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M5 12h14m-6-6 6 6-6 6"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4" data-product-card data-id="keys-mini">
+                <article class="card product-card h-100 border-0">
+                  <div class="product-card__visual position-relative">
+                    <a href="product.html?id=keys-mini" tabindex="-1" aria-hidden="true">
+                      <img src="images/keys-mini.svg" class="card-img-top" alt="" width="420" height="340" loading="lazy">
+                    </a>
+                    <span class="badge product-card__badge text-bg-light">
+                      Компактная
+                    </span>
+                    <button class="btn product-card__favorite" type="button" data-favorite="keys-mini" aria-label="В избранное: Keys Mini" aria-pressed="false">
+                      <svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="card-body px-1 pb-1 d-flex flex-column">
+                    <p class="small text-body-secondary mb-1">
+                      Клавиатуры
+                    </p>
+                    <h3 class="h5 card-title">
+                      <a class="text-decoration-none text-body" href="product.html?id=keys-mini">
+                        Keys Mini
+                      </a>
+                    </h3>
+                    <p class="card-text text-body-secondary small flex-grow-1">
+                      Больше места для идей.
+                    </p>
+                    <div class="d-flex align-items-center flex-wrap gap-2 mb-3">
+                      <span class="fw-semibold fs-5">
+                        4 990 ₽
+                      </span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <a class="btn btn-outline-dark flex-grow-1" href="product.html?id=keys-mini">
+                        Подробнее
+                      </a>
+                      <a class="btn btn-primary" href="order.html?product=keys-mini" aria-label="Заказать Keys Mini">
+                        <svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M5 12h14m-6-6 6 6-6 6"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4" data-product-card data-id="sound-studio">
+                <article class="card product-card h-100 border-0">
+                  <div class="product-card__visual position-relative">
+                    <a href="product.html?id=sound-studio" tabindex="-1" aria-hidden="true">
+                      <img src="images/sound-studio.svg" class="card-img-top" alt="" width="420" height="340" loading="lazy">
+                    </a>
+                    <span class="badge product-card__badge text-bg-light">
+                      Скидка
+                    </span>
+                    <button class="btn product-card__favorite" type="button" data-favorite="sound-studio" aria-label="В избранное: Sound Studio" aria-pressed="false">
+                      <svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="card-body px-1 pb-1 d-flex flex-column">
+                    <p class="small text-body-secondary mb-1">
+                      Аудио
+                    </p>
+                    <h3 class="h5 card-title">
+                      <a class="text-decoration-none text-body" href="product.html?id=sound-studio">
+                        Sound Studio
+                      </a>
+                    </h3>
+                    <p class="card-text text-body-secondary small flex-grow-1">
+                      Каждая деталь на своём месте.
+                    </p>
+                    <div class="d-flex align-items-center flex-wrap gap-2 mb-3">
+                      <span class="fw-semibold fs-5">
+                        12 990 ₽
+                      </span>
+                      <del class="small text-body-secondary">
+                        14 990 ₽
+                      </del>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <a class="btn btn-outline-dark flex-grow-1" href="product.html?id=sound-studio">
+                        Подробнее
+                      </a>
+                      <a class="btn btn-primary" href="order.html?product=sound-studio" aria-label="Заказать Sound Studio">
+                        <svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M5 12h14m-6-6 6 6-6 6"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4" data-product-card data-id="desk-glow">
+                <article class="card product-card h-100 border-0">
+                  <div class="product-card__visual position-relative">
+                    <a href="product.html?id=desk-glow" tabindex="-1" aria-hidden="true">
+                      <img src="images/desk-glow.svg" class="card-img-top" alt="" width="420" height="340" loading="lazy">
+                    </a>
+                    <span class="badge product-card__badge text-bg-light">
+                      Новинка
+                    </span>
+                    <button class="btn product-card__favorite" type="button" data-favorite="desk-glow" aria-label="В избранное: Desk Glow" aria-pressed="false">
+                      <svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="card-body px-1 pb-1 d-flex flex-column">
+                    <p class="small text-body-secondary mb-1">
+                      Аксессуары
+                    </p>
+                    <h3 class="h5 card-title">
+                      <a class="text-decoration-none text-body" href="product.html?id=desk-glow">
+                        Desk Glow
+                      </a>
+                    </h3>
+                    <p class="card-text text-body-secondary small flex-grow-1">
+                      Свет под ваше настроение.
+                    </p>
+                    <div class="d-flex align-items-center flex-wrap gap-2 mb-3">
+                      <span class="fw-semibold fs-5">
+                        5 490 ₽
+                      </span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <a class="btn btn-outline-dark flex-grow-1" href="product.html?id=desk-glow">
+                        Подробнее
+                      </a>
+                      <a class="btn btn-primary" href="order.html?product=desk-glow" aria-label="Заказать Desk Glow">
+                        <svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M5 12h14m-6-6 6 6-6 6"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4" data-product-card data-id="keys-pro">
+                <article class="card product-card h-100 border-0">
+                  <div class="product-card__visual position-relative">
+                    <a href="product.html?id=keys-pro" tabindex="-1" aria-hidden="true">
+                      <img src="images/keys-pro.svg" class="card-img-top" alt="" width="420" height="340" loading="lazy">
+                    </a>
+                    <span class="badge product-card__badge text-bg-light">
+                      Для работы
+                    </span>
+                    <button class="btn product-card__favorite" type="button" data-favorite="keys-pro" aria-label="В избранное: Keys Pro" aria-pressed="false">
+                      <svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="card-body px-1 pb-1 d-flex flex-column">
+                    <p class="small text-body-secondary mb-1">
+                      Клавиатуры
+                    </p>
+                    <h3 class="h5 card-title">
+                      <a class="text-decoration-none text-body" href="product.html?id=keys-pro">
+                        Keys Pro
+                      </a>
+                    </h3>
+                    <p class="card-text text-body-secondary small flex-grow-1">
+                      Полноразмерная свобода.
+                    </p>
+                    <div class="d-flex align-items-center flex-wrap gap-2 mb-3">
+                      <span class="fw-semibold fs-5">
+                        9 990 ₽
+                      </span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <a class="btn btn-outline-dark flex-grow-1" href="product.html?id=keys-pro">
+                        Подробнее
+                      </a>
+                      <a class="btn btn-primary" href="order.html?product=keys-pro" aria-label="Заказать Keys Pro">
+                        <svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M5 12h14m-6-6 6 6-6 6"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4" data-product-card data-id="sound-go">
+                <article class="card product-card h-100 border-0">
+                  <div class="product-card__visual position-relative">
+                    <a href="product.html?id=sound-go" tabindex="-1" aria-hidden="true">
+                      <img src="images/sound-go.svg" class="card-img-top" alt="" width="420" height="340" loading="lazy">
+                    </a>
+                    <span class="badge product-card__badge text-bg-light">
+                      Скидка
+                    </span>
+                    <button class="btn product-card__favorite" type="button" data-favorite="sound-go" aria-label="В избранное: Sound Go" aria-pressed="false">
+                      <svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="card-body px-1 pb-1 d-flex flex-column">
+                    <p class="small text-body-secondary mb-1">
+                      Аудио
+                    </p>
+                    <h3 class="h5 card-title">
+                      <a class="text-decoration-none text-body" href="product.html?id=sound-go">
+                        Sound Go
+                      </a>
+                    </h3>
+                    <p class="card-text text-body-secondary small flex-grow-1">
+                      Любимый плейлист всегда рядом.
+                    </p>
+                    <div class="d-flex align-items-center flex-wrap gap-2 mb-3">
+                      <span class="fw-semibold fs-5">
+                        5 990 ₽
+                      </span>
+                      <del class="small text-body-secondary">
+                        6 990 ₽
+                      </del>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <a class="btn btn-outline-dark flex-grow-1" href="product.html?id=sound-go">
+                        Подробнее
+                      </a>
+                      <a class="btn btn-primary" href="order.html?product=sound-go" aria-label="Заказать Sound Go">
+                        <svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M5 12h14m-6-6 6 6-6 6"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4" data-product-card data-id="light-dot">
+                <article class="card product-card h-100 border-0">
+                  <div class="product-card__visual position-relative">
+                    <a href="product.html?id=light-dot" tabindex="-1" aria-hidden="true">
+                      <img src="images/light-dot.svg" class="card-img-top" alt="" width="420" height="340" loading="lazy">
+                    </a>
+                    <span class="badge product-card__badge text-bg-light">
+                      Компактная
+                    </span>
+                    <button class="btn product-card__favorite" type="button" data-favorite="light-dot" aria-label="В избранное: Light Dot" aria-pressed="false">
+                      <svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="card-body px-1 pb-1 d-flex flex-column">
+                    <p class="small text-body-secondary mb-1">
+                      Аксессуары
+                    </p>
+                    <h3 class="h5 card-title">
+                      <a class="text-decoration-none text-body" href="product.html?id=light-dot">
+                        Light Dot
+                      </a>
+                    </h3>
+                    <p class="card-text text-body-secondary small flex-grow-1">
+                      Маленькая деталь большого комфорта.
+                    </p>
+                    <div class="d-flex align-items-center flex-wrap gap-2 mb-3">
+                      <span class="fw-semibold fs-5">
+                        2 990 ₽
+                      </span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <a class="btn btn-outline-dark flex-grow-1" href="product.html?id=light-dot">
+                        Подробнее
+                      </a>
+                      <a class="btn btn-primary" href="order.html?product=light-dot" aria-label="Заказать Light Dot">
+                        <svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M5 12h14m-6-6 6 6-6 6"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div id="catalogEmpty" class="alert alert-light border mt-4" hidden>
+              Ничего не нашлось. Измените условия или
+              <button class="btn btn-link p-0" type="button" data-reset-filters>
+                сбросьте фильтры
+              </button>
+              .
+            </div>
+            <nav class="mt-5" aria-label="Страницы каталога">
+              <ul id="pagination" class="pagination justify-content-center">
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer mt-auto pt-5 pb-4">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-md-6">
+            <a class="brand text-decoration-none text-white" href="index.html">
+              точка.
+            </a>
+            <p class="site-footer__muted mt-3">
+              Хорошие вещи. Спокойный ритм.
+              <br>
+              Ваше рабочее пространство.
+            </p>
+          </div>
+          <div class="col-6 col-md-3">
+            <h2 class="h6">
+              Исследуйте
+            </h2>
+            <ul class="list-unstyled">
+              <li>
+                <a href="catalog.html">
+                  Каталог
+                </a>
+              </li>
+              <li>
+                <a href="favorites.html">
+                  Избранное
+                </a>
+              </li>
+              <li>
+                <a href="order.html">
+                  Оставить заявку
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3">
+            <h2 class="h6">
+              Помощь
+            </h2>
+            <ul class="list-unstyled">
+              <li>
+                <a href="delivery.html">
+                  Доставка и возврат
+                </a>
+              </li>
+              <li>
+                <a href="contacts.html">
+                  Контакты и FAQ
+                </a>
+              </li>
+              <li>
+                <a href="privacy.html">
+                  О данных формы
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-top border-secondary mt-4 pt-3 d-flex flex-wrap justify-content-between gap-2 small site-footer__muted">
+          <span>
+            © 2026 Точка · Учебный проект КР №2
+          </span>
+          <span>
+            Ситников Александр · ЭФБО-01-25
+          </span>
+        </div>
+      </div>
+    </footer>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div class="toast" id="siteToast" role="status" aria-live="polite" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto">
+            Точка
+          </strong>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Закрыть уведомление">
+          </button>
+        </div>
+        <div class="toast-body" id="toastMessage">
+        </div>
+      </div>
+    </div>
+    <noscript>
+      <div class="alert alert-warning container my-3">
+        Для фильтров, избранного и подтверждения заявки включите JavaScript. Страницы и описания товаров доступны без него.
+      </div>
+    </noscript>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js">
+    </script>
+    <script src="js/products.js">
+    </script>
+    <script src="js/main.js">
+    </script>
+  </body>
+</html>
