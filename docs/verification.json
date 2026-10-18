@@ -1,0 +1,23 @@
+{
+  "base": "http://127.0.0.1:4173",
+  "checks": [
+    "Every page loads offline assets without console errors at 320–1440px",
+    "Mobile menu opens, closes and exposes current page",
+    "Catalog pagination, search, category, price, sale, sorting and empty state",
+    "Favorite persists across navigation and reload; empty state restores",
+    "All nine product pages, tabs, modal, invalid URL and order preselection",
+    "Order validates required fields, phone, whitespace, integer quantity and courier address",
+    "Accordion and keyboard skip link work",
+    "Storage unavailable and JavaScript disabled degrade without errors"
+  ],
+  "pageErrors": [],
+  "externalRequests": [],
+  "antivirusRequestsBlocked": 60,
+  "widths": [
+    320,
+    375,
+    768,
+    1024,
+    1440
+  ]
+}
