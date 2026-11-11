@@ -165,7 +165,7 @@ a {
   background: #e9eddf;
 }
 
-/* Карточки: фон для предметных снимков, отдельный режим для фотографий на столе. */
+/* Карточки и предметные фотографии клавиатур. */
 .product-card {
   background: #fff;
   border-color: #d9ddd5;
@@ -184,10 +184,6 @@ a {
   object-fit: contain;
   padding: 1.7rem;
   transition: transform 0.25s ease;
-}
-.product-card .product-card__photo {
-  object-fit: cover;
-  padding: 0;
 }
 .product-card:hover .card-img-top {
   transform: scale(1.025);
@@ -234,10 +230,6 @@ a {
   background: #fff;
   border: 1px solid #d9ddd5;
 }
-.detail-image--photo {
-  object-fit: cover;
-  padding: 0;
-}
 .summary-image {
   width: 100%;
   aspect-ratio: 8 / 5;
@@ -267,17 +259,6 @@ a {
 }
 .nav-tabs .nav-link {
   color: #5d655f;
-}
-.pagination {
-  --bs-pagination-color: #173e36;
-  --bs-pagination-active-bg: #173e36;
-  --bs-pagination-active-border-color: #173e36;
-  --bs-pagination-focus-box-shadow: 0 0 0 0.2rem #cedcc6;
-}
-.page-link {
-  min-width: 44px;
-  min-height: 44px;
-  text-align: center;
 }
 .toast-container {
   z-index: 1090;
@@ -355,9 +336,6 @@ main:focus {
   }
   .detail-image {
     padding: 1rem;
-  }
-  .detail-image--photo {
-    padding: 0;
   }
 }
 @media (prefers-reduced-motion: reduce) {

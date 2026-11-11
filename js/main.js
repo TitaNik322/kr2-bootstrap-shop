@@ -83,7 +83,7 @@
   });
   refreshFavorites();
 
-  // Фильтры и пагинация переставляют уже существующие карточки.
+  // Фильтры и сортировка работают с уже существующими карточками.
   const filters = document.getElementById('catalogFilters');
   if (filters) {
     const grid = document.getElementById('catalogGrid');
@@ -121,52 +121,28 @@
       cards.forEach((card) => {
         card.hidden = true;
       });
-      matching.slice((currentPage - 1) * pageSize, currentPage * pageSize).forEach((product) => {
+      matching.forEach((product) => {
         const card = cards.get(product.id);
         card.hidden = false;
         grid.append(card);
       });
-      document.getElementById('catalogCount').textContent =
-        `Найдено товаров: ${matching.length}${pageCount > 1 ? ` · Страница ${currentPage} из ${pageCount}` : ''}`;
+      document.getElementById('catalogCount').textContent = `Найдено товаров: ${matching.length}`;
       document.getElementById('catalogEmpty').hidden = matching.length > 0;
-      const pagination = document.getElementById('pagination');
-      pagination.replaceChildren();
-      for (let page = 1; page <= pageCount && pageCount > 1; page++) {
-        const item = document.createElement('li');
-        item.className = `page-item${page === currentPage ? ' active' : ''}`;
-        const button = document.createElement('button');
-        button.type = 'button';
-        button.className = 'page-link';
-        button.textContent = page;
-        button.setAttribute('aria-label', `Страница ${page}`);
-        if (page === currentPage) button.setAttribute('aria-current', 'page');
-        button.addEventListener('click', () => {
-          currentPage = page;
-          renderCatalog();
-          pagination.querySelector('[aria-current="page"]').focus({ preventScroll: true });
-          document.getElementById('catalogCount').scrollIntoView({ block: 'center' });
-        });
-        item.append(button);
-        pagination.append(item);
-      }
     }
     filters.addEventListener('submit', (event) => {
       event.preventDefault();
       filters.reportValidity();
     });
     filters.addEventListener('input', () => {
-      currentPage = 1;
       renderCatalog();
     });
     sort.addEventListener('change', () => {
-      currentPage = 1;
       renderCatalog();
     });
     filters.addEventListener('reset', () => {
       // Перечитываем значения после стандартного сброса полей браузером.
       setTimeout(() => {
         sort.value = 'popular';
-        currentPage = 1;
         renderCatalog();
       }, 0);
     });
@@ -217,7 +193,6 @@
       const image = document.getElementById('detailImage');
       image.src = product.image;
       image.alt = `${product.name} — клавиатура из каталога`;
-      image.classList.toggle('detail-image--photo', product.id.startsWith('keychron'));
       ['detailOrder', 'helpOrder'].forEach((id) => {
         document.getElementById(id).href = `order.html?product=${product.id}`;
       });
