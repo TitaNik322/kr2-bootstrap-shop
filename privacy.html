@@ -1,75 +1,75 @@
 <!doctype html>
+
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="О данных формы. Точка — учебный магазин техники для рабочего пространства.">
-    <meta name="theme-color" content="#fbf9f5">
-    <title>
-      О данных формы — Точка
-    </title>
-    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      content="О данных формы. Механические, оптические и низкопрофильные клавиатуры KeyboardShop."
+      name="description"
+    />
+    <meta content="#173e36" name="theme-color" />
+    <title>О данных формы — KeyboardShop</title>
+    <link href="images/favicon.svg" rel="icon" type="image/svg+xml" />
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
   </head>
-  <body class="d-flex flex-column min-vh-100">
-    <a class="skip-link" href="#main">
-      Перейти к содержимому
-    </a>
-    <div class="announcement text-center small py-2 px-3">
-      Место для хороших идей. Техника для вашего ритма.
-    </div>
+  <body class="d-flex flex-column">
+    <a class="skip-link" href="#main"> Перейти к содержимому </a>
+
     <header class="site-header sticky-top border-bottom">
-      <nav class="navbar navbar-expand-lg py-3" aria-label="Основная навигация">
+      <nav aria-label="Основная навигация" class="navbar navbar-expand-lg py-3">
         <div class="container">
-          <a class="navbar-brand brand" href="index.html">
-            <span class="brand__mark">
-              т.
-            </span>
-            точка
-            <span class="brand__caption">
-              техника для жизни
-            </span>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Открыть меню">
-            <span class="navbar-toggler-icon">
-            </span>
+          <a class="navbar-brand brand" href="index.html"
+            >KeyboardShop<span class="brand__registered">®</span></a
+          >
+          <button
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Открыть меню"
+            class="navbar-toggler"
+            data-bs-target="#mainNavbar"
+            data-bs-toggle="collapse"
+            type="button"
+          >
+            <span class="navbar-toggler-icon"> </span>
           </button>
           <div class="collapse navbar-collapse" id="mainNavbar">
             <ul class="navbar-nav mx-auto gap-lg-3">
               <li class="nav-item">
-                <a class="nav-link "  href="index.html">
-                  Главная
-                </a>
+                <a class="nav-link" href="index.html"> Главная </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link "  href="catalog.html">
-                  Каталог
-                </a>
+                <a class="nav-link" href="catalog.html"> Каталог </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link "  href="delivery.html">
-                  Доставка
-                </a>
+                <a class="nav-link" href="delivery.html"> Доставка </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link "  href="contacts.html">
-                  Контакты
-                </a>
+                <a class="nav-link" href="contacts.html"> Контакты </a>
               </li>
             </ul>
             <div class="d-flex gap-2 pt-3 pt-lg-0">
-              <a href="favorites.html" class="btn btn-light" aria-label="Избранное">
-                <svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>
+              <a aria-label="Избранное" class="btn btn-light" href="favorites.html">
+                <svg
+                  aria-hidden="true"
+                  class="icon"
+                  fill="none"
+                  height="22"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.7"
+                  viewbox="0 0 24 24"
+                  width="22"
+                >
+                  <path
+                    d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                  ></path>
                 </svg>
-                <span data-favorite-count class="badge text-bg-dark">
-                  0
-                </span>
+                <span class="badge text-bg-dark" data-favorite-count=""> 0 </span>
               </a>
-              <a class="btn btn-outline-dark" href="order.html" >
-                Оставить заявку
-              </a>
+              <a class="btn btn-outline-dark" href="order.html"> Оставить заявку </a>
             </div>
           </div>
         </div>
@@ -78,49 +78,39 @@
     <main id="main" tabindex="-1">
       <nav aria-label="Хлебные крошки" class="container pt-4">
         <ol class="breadcrumb small">
-          <li class="breadcrumb-item">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">
-            О данных формы
-          </li>
+          <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+          <li aria-current="page" class="breadcrumb-item active">О данных формы</li>
         </ol>
       </nav>
       <section class="container pt-3 pb-5">
         <div class="row">
           <div class="col-12 col-lg-8">
-            <p class="eyebrow">
-              Прозрачно и просто
-            </p>
-            <h1 class="display-5 fw-semibold mb-4">
-              О данных формы
-            </h1>
+            <p class="eyebrow">Прозрачно и просто</p>
+            <h1 class="display-5 fw-semibold mb-4">О данных формы</h1>
             <p class="lead">
-              «Точка» — учебная демонстрация интерфейса. Форма не отправляет заявки в реальный магазин.
+              Форма KeyboardShop проверяет введённые данные в браузере. Отправка заявки и оплата не
+              подключены.
             </p>
-            <h2 class="h4 mt-4">
-              Что происходит с введёнными данными
-            </h2>
+            <h2 class="h4 mt-4">Контактные данные</h2>
             <p>
-              Имя, почта, телефон, адрес и комментарий используются только в открытой вкладке для проверки и показа подтверждения. Скрипт не записывает их в localStorage, cookies или URL и не отправляет по сети. После перезагрузки заявки не восстанавливаются; браузер может отдельно предлагать собственное автозаполнение.
+              Имя, почта, телефон, адрес и комментарий используются только для проверки и показа
+              окна подтверждения. Они не записываются в localStorage, cookies или URL и не
+              отправляются по сети. После перезагрузки заявка не восстанавливается. Браузер может
+              отдельно предлагать собственное автозаполнение.
             </p>
-            <h2 class="h4 mt-4">
-              Что сохраняется
-            </h2>
+            <h2 class="h4 mt-4">Избранное</h2>
             <p>
-              В localStorage сохраняются только идентификаторы избранных товаров. Их можно удалить повторным нажатием на сердечко. При недоступном хранилище избранное работает в памяти страницы.
+              В localStorage сохраняются только идентификаторы выбранных клавиатур. Повторное
+              нажатие на сердечко удаляет модель из подборки. При недоступном хранилище подборка
+              действует только в памяти текущей страницы.
             </p>
-            <h2 class="h4 mt-4">
-              Как проверить
-            </h2>
+            <h2 class="h4 mt-4">Перед завершением</h2>
             <p>
-              Откройте вкладку Network в DevTools и подтвердите тестовую заявку: сетевого запроса с данными формы не будет. Используйте вымышленные данные, например «Тестовый пользователь» и test@example.com.
+              В окне подтверждения можно проверить выбранную модель, количество и итоговую сумму.
+              Кнопка «Изменить» возвращает к редактированию. Сообщение о проверке данных не
+              означает, что создан реальный заказ.
             </p>
-            <a href="order.html" class="btn btn-outline-dark mt-3">
-              Перейти к форме
-            </a>
+            <a class="btn btn-outline-dark mt-3" href="order.html">Перейти к форме</a>
           </div>
         </div>
       </section>
@@ -129,93 +119,67 @@
       <div class="container">
         <div class="row g-4">
           <div class="col-12 col-md-6">
-            <a class="brand text-decoration-none text-white" href="index.html">
-              точка.
-            </a>
-            <p class="site-footer__muted mt-3">
-              Хорошие вещи. Спокойный ритм.
-              <br>
-              Ваше рабочее пространство.
-            </p>
+            <a class="brand text-decoration-none text-white" href="index.html">KeyboardShop®</a>
+            <p class="site-footer__muted mt-3">Найди свой ритм.<br />Начни с первого нажатия.</p>
           </div>
           <div class="col-6 col-md-3">
-            <h2 class="h6">
-              Исследуйте
-            </h2>
+            <h2 class="h6">Исследуйте</h2>
             <ul class="list-unstyled">
               <li>
-                <a href="catalog.html">
-                  Каталог
-                </a>
+                <a href="catalog.html"> Каталог </a>
               </li>
               <li>
-                <a href="favorites.html">
-                  Избранное
-                </a>
+                <a href="favorites.html"> Избранное </a>
               </li>
               <li>
-                <a href="order.html">
-                  Оставить заявку
-                </a>
+                <a href="order.html"> Оставить заявку </a>
               </li>
             </ul>
           </div>
           <div class="col-6 col-md-3">
-            <h2 class="h6">
-              Помощь
-            </h2>
+            <h2 class="h6">Помощь</h2>
             <ul class="list-unstyled">
               <li>
-                <a href="delivery.html">
-                  Доставка и возврат
-                </a>
+                <a href="delivery.html"> Доставка </a>
               </li>
               <li>
-                <a href="contacts.html">
-                  Контакты и FAQ
-                </a>
+                <a href="contacts.html"> Контакты и FAQ </a>
               </li>
               <li>
-                <a href="privacy.html">
-                  О данных формы
-                </a>
+                <a href="privacy.html"> О данных формы </a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="border-top border-secondary mt-4 pt-3 d-flex flex-wrap justify-content-between gap-2 small site-footer__muted">
-          <span>
-            © 2026 Точка · Учебный проект КР №2
-          </span>
-          <span>
-            Ситников Александр · ЭФБО-01-25
-          </span>
+        <div
+          class="border-top border-secondary mt-4 pt-3 d-flex flex-wrap justify-content-between gap-2 small site-footer__muted"
+        >
+          <span>© 2026 KeyboardShop</span><span>Клавиатуры с характером</span>
         </div>
       </div>
     </footer>
     <div class="toast-container position-fixed bottom-0 end-0 p-3">
-      <div class="toast" id="siteToast" role="status" aria-live="polite" aria-atomic="true">
+      <div aria-atomic="true" aria-live="polite" class="toast" id="siteToast" role="status">
         <div class="toast-header">
-          <strong class="me-auto">
-            Точка
-          </strong>
-          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Закрыть уведомление">
-          </button>
+          <strong class="me-auto">KeyboardShop</strong>
+          <button
+            aria-label="Закрыть уведомление"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            type="button"
+          ></button>
         </div>
-        <div class="toast-body" id="toastMessage">
-        </div>
+        <div class="toast-body" id="toastMessage"></div>
       </div>
     </div>
     <noscript>
       <div class="alert alert-warning container my-3">
-        Для фильтров, избранного и подтверждения заявки включите JavaScript. Страницы и описания товаров доступны без него.
+        Для фильтров, избранного и подтверждения заявки включите JavaScript. Страницы и описания
+        товаров доступны без него.
       </div>
     </noscript>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js">
-    </script>
-    <script src="js/products.js">
-    </script>
-    <script src="js/main.js">
-    </script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
