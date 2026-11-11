@@ -11,7 +11,7 @@
 
 ## О проекте
 
-Сайт продолжает тему магазина клавиатур из первой работы. Это отдельная реализация на Bootstrap: раскладка построена на `container`, `row`, `col-*` и классах отступов, интерактивные компоненты работают через Bootstrap JS Bundle. Цвета, фотографии и типографика согласованы с [KeyboardShop из КР №3](https://titanik322.github.io/kr3-responsive-shop/).
+Сайт продолжает тему магазина клавиатур из первой работы. Это отдельная реализация на Bootstrap: раскладка построена на `container`, `row`, `col-*` и классах отступов, интерактивные компоненты работают через Bootstrap JS Bundle. Для магазина выбраны единая зелёная палитра, реальные фотографии и сдержанная типографика.
 
 Используются HTML, CSS, JavaScript и Bootstrap. Сборщик, npm и серверная часть для просмотра не нужны.
 
@@ -129,7 +129,7 @@ python -m http.server 8772 --bind 127.0.0.1
 
 - Lynace K1 Dragon: [исходная фотография производителя](https://cdn.prod.website-files.com/65f1868446603b58c3d61080/6932ce83e5a6f96956b880fd_comp2%202.webp).
 - Главный экран: [MM Studio Class 0413, Divinikey](https://divinikey.com/products/mm-studio-class-0413-keyboard-southpaw-layout).
-- Logitech G Pro X и Razer Huntsman V2: фотографии из первой и третьей работ.
+- Logitech G Pro X и Razer Huntsman V2: фотографии из первой работы.
 - Keychron: официальные страницы [K2](https://www.keychron.com/products/keychron-k2-wireless-mechanical-keyboard), [K3 V2](https://www.keychron.com/products/keychron-k3-wireless-mechanical-keyboard), [K6](https://www.keychron.com/products/keychron-k6-wireless-mechanical-keyboard) и [K8](https://www.keychron.com/products/keychron-k8-tenkeyless-wireless-mechanical-keyboard).
 
 Права на фотографии и товарные знаки принадлежат их владельцам. Цены в каталоге заданы для сценария интерфейса и не являются актуальными предложениями производителей.
