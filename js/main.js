@@ -1,6 +1,10 @@
 // Bootstrap управляет компонентами; здесь — каталог, избранное и проверка заявки.
 (() => {
   'use strict';
+  // Карусель переключается вручную; Bootstrap добавляет клавиши и свайпы.
+  const carousel = document.getElementById('keyboardCarousel');
+  if (carousel) bootstrap.Carousel.getOrCreateInstance(carousel, { interval: false });
+
   const products = window.SHOP_PRODUCTS;
   const byId = new Map(products.map((product) => [product.id, product]));
   const money = (value) =>

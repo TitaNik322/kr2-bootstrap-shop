@@ -237,6 +237,66 @@ a {
   background: #fff;
 }
 
+/* Карусель коллекции: управление Bootstrap, фирменное оформление. */
+.keyboard-carousel {
+  overflow: hidden;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 1rem;
+  background: #fff;
+}
+.keyboard-carousel__image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 8 / 5;
+  object-fit: contain;
+  padding: clamp(1.5rem, 4vw, 3rem);
+}
+.keyboard-carousel .carousel-control-prev,
+.keyboard-carousel .carousel-control-next {
+  position: static;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #173e36;
+  opacity: 1;
+}
+.keyboard-carousel .carousel-control-prev:hover,
+.keyboard-carousel .carousel-control-next:hover {
+  background: #28564a;
+}
+.keyboard-carousel .carousel-control-prev-icon,
+.keyboard-carousel .carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+}
+.keyboard-carousel .carousel-indicators {
+  position: static;
+  margin: 0;
+}
+.keyboard-carousel .carousel-indicators button {
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #173e36;
+  opacity: 0.4;
+}
+.keyboard-carousel .carousel-indicators button::after {
+  display: block;
+  width: 24px;
+  height: 3px;
+  margin-inline: auto;
+  border-radius: 2px;
+  background: currentColor;
+  content: '';
+}
+.keyboard-carousel .carousel-indicators button.active {
+  opacity: 1;
+}
+
 /* Каталог, заявка и дополнительные компоненты. */
 .catalog-filters,
 .order-summary {

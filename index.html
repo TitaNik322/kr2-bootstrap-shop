@@ -406,21 +406,166 @@
           </div>
         </div>
       </section>
-      <section class="container pb-5">
-        <div class="story p-4 p-md-5 rounded-4">
-          <div class="row g-4 align-items-center">
-            <div class="col-12 col-md-8">
-              <p class="eyebrow">Дело в ощущениях</p>
-              <h2 class="h2">Найдём клавиатуру под твой ритм.</h2>
-              <p class="text-body-secondary mb-0">
-                Размер, звук и ход клавиш — выбери то, что подходит именно тебе.
-              </p>
+      <section class="container pb-5" aria-labelledby="collectionTitle">
+        <p class="eyebrow">Дело в ощущениях</p>
+        <h2 class="h2 mb-4" id="collectionTitle">Три модели. Три настроения.</h2>
+        <div
+          class="carousel slide keyboard-carousel"
+          id="keyboardCarousel"
+          role="region"
+          aria-roledescription="карусель"
+          aria-label="Знакомство с коллекцией"
+        >
+          <div class="carousel-inner" aria-live="polite">
+            <div
+              class="carousel-item active"
+              role="group"
+              aria-roledescription="слайд"
+              aria-label="1 из 3: Lynace K1 Dragon"
+            >
+              <div class="row g-0 align-items-center">
+                <div class="col-12 col-md-6">
+                  <img
+                    class="keyboard-carousel__image"
+                    src="images/lynace-k1.webp"
+                    alt="Lynace K1 Dragon — клавиатура из коллекции"
+                    width="800"
+                    height="500"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="p-4 p-lg-5">
+                    <p class="eyebrow mb-2">Механические · 80% (TKL)</p>
+                    <h3 class="h2 mb-3">Lynace K1 Dragon</h3>
+                    <p class="text-body-secondary mb-4">
+                      Характер, который слышно с первого нажатия. Яркий корпус, съёмный кабель и
+                      компактный формат без цифрового блока.
+                    </p>
+                    <div class="d-flex flex-wrap align-items-center gap-3">
+                      <span class="fs-4 fw-semibold">5&nbsp;990 ₽</span
+                      ><a class="btn btn-primary" href="product.html?id=lynace-k1"
+                        >Подробнее о модели ↗</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-12 col-md-4 text-md-end">
-              <a class="btn btn-primary" href="catalog.html?category=Механические"
-                >Посмотреть механику ↗</a
-              >
+            <div
+              class="carousel-item"
+              role="group"
+              aria-roledescription="слайд"
+              aria-label="2 из 3: Logitech G Pro X"
+            >
+              <div class="row g-0 align-items-center">
+                <div class="col-12 col-md-6">
+                  <img
+                    class="keyboard-carousel__image"
+                    src="images/logitech-pro-x.webp"
+                    alt="Logitech G Pro X — клавиатура из коллекции"
+                    width="800"
+                    height="500"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="p-4 p-lg-5">
+                    <p class="eyebrow mb-2">Механические · 80% (TKL)</p>
+                    <h3 class="h2 mb-3">Logitech G Pro X</h3>
+                    <p class="text-body-secondary mb-4">
+                      Точность в каждом движении. Компактная игровая клавиатура со съёмным кабелем и
+                      сменными механическими переключателями.
+                    </p>
+                    <div class="d-flex flex-wrap align-items-center gap-3">
+                      <span class="fs-4 fw-semibold">12&nbsp;990 ₽</span
+                      ><a class="btn btn-primary" href="product.html?id=logitech-pro-x"
+                        >Подробнее о модели ↗</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div
+              class="carousel-item"
+              role="group"
+              aria-roledescription="слайд"
+              aria-label="3 из 3: Razer Huntsman V2"
+            >
+              <div class="row g-0 align-items-center">
+                <div class="col-12 col-md-6">
+                  <img
+                    class="keyboard-carousel__image"
+                    src="images/razer-huntsman-v2.webp"
+                    alt="Razer Huntsman V2 — клавиатура из коллекции"
+                    width="800"
+                    height="500"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="p-4 p-lg-5">
+                    <p class="eyebrow mb-2">Оптические · Полноразмерная</p>
+                    <h3 class="h2 mb-3">Razer Huntsman V2</h3>
+                    <p class="text-body-secondary mb-4">
+                      Быстрее мысли. Оптические переключатели, полноценная раскладка и мягкая
+                      подставка для долгих игровых сессий.
+                    </p>
+                    <div class="d-flex flex-wrap align-items-center gap-3">
+                      <span class="fs-4 fw-semibold">17&nbsp;990 ₽</span
+                      ><a class="btn btn-primary" href="product.html?id=razer-huntsman-v2"
+                        >Подробнее о модели ↗</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="keyboard-carousel__controls d-flex justify-content-between align-items-center gap-3 p-3 border-top"
+          >
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#keyboardCarousel"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span
+              ><span class="visually-hidden">Предыдущая модель</span>
+            </button>
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#keyboardCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Показать Lynace K1 Dragon"
+              ></button
+              ><button
+                type="button"
+                data-bs-target="#keyboardCarousel"
+                data-bs-slide-to="1"
+                aria-label="Показать Logitech G Pro X"
+              ></button
+              ><button
+                type="button"
+                data-bs-target="#keyboardCarousel"
+                data-bs-slide-to="2"
+                aria-label="Показать Razer Huntsman V2"
+              ></button>
+            </div>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#keyboardCarousel"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span
+              ><span class="visually-hidden">Следующая модель</span>
+            </button>
           </div>
         </div>
       </section>
